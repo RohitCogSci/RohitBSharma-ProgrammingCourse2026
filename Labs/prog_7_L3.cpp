@@ -1,7 +1,7 @@
 /////////////////Practice session-lab//////////////
 
 //////// Data conversion 1 ///////////////
-//////Any non-zero value converts to true — including negative numbers. Only 0 converts to false.///////
+// //////Any non-zero value converts to true — including negative numbers. Only 0 converts to false.///////
 // #include <iostream>
 // using namespace std;
 
@@ -32,7 +32,7 @@
 // using namespace std;
 
 // int main() {
-//     double val = 91356.256;
+//     double val = 9134.256;
 //     cout << setprecision(6) << val << endl;   // 91.3, not 91.256 truncated!
 //     return 0;
 // }
@@ -78,8 +78,8 @@
 // using namespace std;
 
 // int main() {
-//     double x = 12345.6789;
-//     cout << setprecision(10) << x << endl;   // scientific wins!
+//     double x = .12345678912999999999;
+//     cout << scientific << setprecision(10) << x << endl;   // scientific wins!
 //     cout << scientific << fixed << setprecision(3) << x << endl;   // fixed wins!
 //     return 0;
 // }
@@ -138,7 +138,7 @@
 // using namespace std;
 
 // int main() {
-//     int x = 100;
+//     int x = 1000;
 //     int y = 10;
 //     if (x != 0 && (y / x > 2)) {   // safe! division never happens
 //     // if (y / x > 2) {   // in some compilers it might run and give y/x=0, some will crash
@@ -151,18 +151,18 @@
 
 
 //////// operators 4 //////////////////
-////////Post-Increment Inside an Expression///////////
-#include <iostream>
-using namespace std;
+// ////////Post-Increment Inside an Expression///////////
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int x = 5;
-    int y = ++x + ++x;
+// int main() {
+//     int x = 5;
+//     int y = x++ + ++x;
 
-    cout << "y = " << y << endl;   // 11 (5 + 6), not 10!
-    cout << "x =" << x << endl;
+//     cout << "y = " << y << endl;   // 11 (5 + 6), not 10!
+//     cout << "x =" << x << endl;
     
-    return 0;
-}
+//     return 0;
+// }
 
 
